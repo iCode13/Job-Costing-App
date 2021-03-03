@@ -1,11 +1,11 @@
 ##### Data Analysis & Visualization Bootcamp, UT-Austin, 12 December 2020
 ##### Team Members: Alicia Pelkey, Amy Banerji, Julie Gandre, Karen Kitchens, Michael Donatucci, Stephen Lyssy
 
-<a href="https://project-2-jobcosting.herokuapp.com/">Deployed Link</a>
+<a href="https://project-2-jobcosting.herokuapp.com/">Link to App v1.0 Deployed on Heroku</a>
 
 # Job Costing App
 
-## Table of contents:
+## Table of Contents
 * [General info](#general-info)
 * [App Workflow](#app-workflow)
 * [Screenshots](#screenshots)
@@ -14,23 +14,34 @@
 * [Limitations](#limitations)
 * [Future Improvements](#future-improvements)
 
-## General info:
+## General info
 Smaller Construction management teams have less resources and time to keep up with their busy days. Other than managing the team and projects, they need to focus on the financial timelines and discussing projects with Stakeholders. The Job Costing App will make user experience with project management tools friendlier, and allows them to give live updates to their customers, clients, and bosses.
 
 This app will allow for the leads to see progress in the financial and day to day workload by tracking and visualizing budgeted labor values, and comparing them to the actual labor values. This limits the back and forth of chasing employees around for timesheets and daily progress. Knowing when a project is exceeding budgeted time is often the first step to preventing a project from becoming a major loss.
 
-## App Workflow:
-<img src=images/app_workflow.jpg width="600" />
+## App Workflow
+<br>
+<p align="center">
+    <img src=images/app_workflow.jpg width="700" />
+</p>   
 
-## Screenshots:
-![dashboard](images/dashboard.png)
+<br><br>
+
+## Screenshots
+![dashboard](images/dashboard.png) 
+<br><br><br>
 ![details](images/project_details.png)
-![project](images/new_project.png) 
-![time](images/enter_time.png) 
+<br><br><br>
+![project](images/new_project.png)
+<br><br><br>
+![time](images/enter_time.png)
+<br><br><br>
 ![user](images/new_user.png)
+<br><br><br>
 ![visualization](images/visualization.png)
+<br><br><br>
 
-## App Routes: 
+## App Routes
 * Homepage
     @app.route("/", methods=['GET'])
 * Project dashboard
@@ -44,7 +55,7 @@ This app will allow for the leads to see progress in the financial and day to da
 * Enter a new time sheet
     @app.route("/new_time", methods=['GET', 'POST'])    
 
-## Technologies:
+## Technologies
 * Python 
 * Flask
 * Psycopg2
@@ -56,13 +67,13 @@ This app will allow for the leads to see progress in the financial and day to da
 * Plotly
 * Heroku
 
-## Limitations:
+## Limitations
 * App performance
 * App navigation
 * No options yet to update or delete data from the database
 * Currently only tracks labor expense
 
-## Future Improvements:
+## Future Improvements
 * Routes for updating and deleting data.
 * Status updates and percentage complete for each project.
 * Database expansion to include a full range of expenses for projects such as: materials, subcontractors, sales tax, overhead, labor burden, and overtime.
